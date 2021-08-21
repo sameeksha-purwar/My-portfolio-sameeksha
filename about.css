@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+   
+    
+}
+html{
+    font-size: calc(1em+1vw);
+}
+.animates{
+	-webkit-animation:animates 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+	
+	animation:animates 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+
+
+@-webkit-keyframes animates {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animates {
+	0% {opacity: 0;transform: translateY(30vh);} /* WORK ON THISSS! */
+/* 	0% {transform: translateY(100%);} */
+	100% {opacity: 1;transform: translateY(0%);}	
+}
+.delay04 { -webkit-animation-delay: .4s; animation-delay: .4s;}
+
+.delay08 { -webkit-animation-delay: .8s; animation-delay: .8s;}
+
+
+
+.logo{
+    position: fixed;
+    float: right;
+    right: 10%;
+    top: 8%;
+    z-index: 999;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+.logo:after{
+    content: 'sameeksha';
+   color: white;
+   cursor: pointer;
+}
+.logo:hover:after{
+    content: 'sameeksha.home';
+    color: red;
+    
+}
+
+.about-heading{
+    margin-top: 35vh;
+    margin-left: 5vw;
+    color: white;
+    max-width: 80%;
+    
+}
+@media screen and (max-width:1000px){
+    .about-heading{
+      font-size: 0.7rem;
+      
+    }
+}
+
+.aboutheading{
+    font-size: 5em;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.p-about{
+    color: white;
+    margin-top: 50vh;
+    margin-left: 10vw;
+    max-width: 65%;
+    line-height: 160%;
+    margin-bottom: 100px;
+}
+@media screen and (max-width:1000px){
+    .p-about{
+      max-width: 100%;
+      
+    }
+}
+h4{
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+.size-large{
+    margin-top: 50px;
+    font-size: 2rem;
+    
+}
+p{
+    font: 1.5rem sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    
+}
+.text-color-red{
+    color: red;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.max-width {
+	max-width: 68%;
+	max-width: 80em;
+	margin: 0 auto;
+}
+		@media screen and (max-width: 1000px) {
+			.max-width {
+				max-width: 100%;
+				max-width: 86%;
+			}
+		}
+
+
+
+

@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    
+}
+html{
+    font-size: calc(1em+1vw);
+}
+h2{
+    position: relative;
+    font-size: 6rem;
+    overflow: hidden;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+}
+@media screen and (max-width: 478px) {
+#welcome {
+       visibility: hidden;
+       display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #welcome {
+       visibility: hidden;
+       display: none;
+    }
+}
+h2:before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%,#000 100% );
+    animation: animate 2s linear forwards ;
+}
+
+
+@keyframes animate {
+    0%{
+        left: -20%;
+    }
+    50%{
+        left: 120%;
+    }
+    100%{
+        left: -20%;
+    }
+}
+
+
+/* homepage */
+.text-color-white{
+    color: white;
+}
+.text-color-red{
+    color: red;
+}
+
+.vertical-center {
+    margin-top: 15vw;
+
+	position: absolute;
+	
+	
+	display: flex;  
+  
+	
+	align-items:   center;
+    margin-left: 30w;
+}
+@media screen and (max-width: 1000px) {
+    .vertical-center {
+       margin-top: 320px;
+    }
+}
+@media screen and (max-width: 478px) {
+    .vertical-center {
+       margin-top: 300px;
+    }
+}
+
+.label-hello:after{
+    content:"Hello";
+}
+.label-hello:hover:after{
+	content:"About";
+    
+}
+.label-iam:after{
+    content:"I am";
+}
+.label-iam:hover:after{
+	content:"Skills";
+}
+.label-dejan:after{
+    content:"Sameeksha";
+}
+.label-dejan:hover:after{
+	content:"Projects";
+}
+a,a:hover a:after, a:visited {
+	text-decoration: none;
+	cursor: pointer;
+    color: blue;
+		
+}
+.animates{
+	-webkit-animation:animates 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+	
+	animation:animates 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+
+
+@-webkit-keyframes animates {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animates {
+	0% {opacity: 0;transform: translateY(30vh);} /* WORK ON THISSS! */
+/* 	0% {transform: translateY(100%);} */
+	100% {opacity: 1;transform: translateY(0%);}	
+}
+.delay04 { -webkit-animation-delay: .4s; animation-delay: .4s;}
+
+.delay08 { -webkit-animation-delay: .8s; animation-delay: .8s;}
+
+
+h1{
+    font-family: 'Baloo Bhai 2', cursive;
+    position: fixed;
+    line-height: 110%;
+    font-size: 8em;
+    letter-spacing: -2px;
+    font-size: 15vmin;
+    
+
+}
+@media screen and (max-width: 1000px) {
+    h1 {
+       line-height: 130%;
+    }
+}
+
+
+.max-width {
+	max-width: 68%;
+	max-width: 55em;
+	margin: 0 auto;
+}
+		@media screen and (max-width: 1000px) {
+			.max-width {
+				max-width: 100%;
+				max-width: 86%;
+			}
+		}
+
+
+
+/* my photo */
+
+.myphoto {	
+	z-index: -9;	
+	position: fixed;
+	top: 25vh; 
+	right: 0; 
+	bottom: 0; 
+	left: 35vw;
+	background-image: url(sam.jpg);
+	background-repeat: no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	 background-size: cover;
+	
+	-webkit-animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
+	-moz-animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
+	animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);	
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+@media screen and (max-width: 792px) {
+    .myphoto {
+        
+        left: 15vw;
+    -webkit-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+    -moz-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+    animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);		
+    }
+}
+@media screen and (max-width: 560px) {
+    .myphoto {
+        
+        left: 5vw;
+    -webkit-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+    -moz-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+    animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);		
+    }
+}
+@media screen and (max-width: 503px) {
+    .myphoto {
+        
+        left: -18vw;
+    -webkit-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+    -moz-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+    animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);		
+    }
+}
+@media screen and (max-width: 406px) {
+    .myphoto {
+        
+        left: -40vw;
+    -webkit-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+    -moz-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+    animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);		
+    }
+}
+
+
+.contact{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 3vw;
+    
+    align-items: center;
+    margin-top: 11vh ;
+    background: linear-gradient(to right,#2f80ed #56ccf2);
+
+}
+
+.contact .icons{
+     padding-top: 0.6em;
+     padding-bottom: 0.6em;
+     position: relative;
+     z-index: 10;
+     align-items: center;
+
+}
+
+.contact .icons a{
+
+border-radius: 50px;
+
+padding: 1em 0.2em;
+padding-bottom: 0.1em;
+transition:color .4s;
+
+}
+@media screen and (max-width:1000px){
+.contact{
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+
+}
+.icons a:hover{
+    color: blue;
+}
+}
+@media screen and(min-width:1000px){
+h4{ visibility: hidden;
+    display: none;
+
+}
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hide-web {
+		display: none;
+	}
+	.toggle-mobile-second {
+		display: none;
+	}
+	.mobile-tap-area {
+		background: transparent;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.tap-indication {
+	    text-align: center;
+		width: 100%;
+		font-family:"Medium";
+		color: #ffffff;
+		position: fixed;
+		bottom: 4%;
+		font-size: 0.6em; /* general fallback */
+	    font-size: 3.6vm; /* IE9 fallback */
+	    font-size: 3.6vmin;
+		animation: bounce 1s infinite alternate;
+		
+		-webkit-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		-moz-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;	
+	}
+	@keyframes bounce {
+	  from {
+	    transform: translateY(0px);
+	  }
+	  to {
+	    transform: translateY(-8px);
+	  }
+	}
+	@-webkit-keyframes bounce {
+	  from {
+	    transform: translateY(0px);
+	  }
+	  to {
+	    transform: translateY(-8px);
+	  }
+	}
+}
+
+
+
+
+
+.on-hover-40, .on-hover--40 {
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover-40:hover {
+	margin-left: 40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+.on-hover--40:hover {
+	margin-left: -40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+		@media screen and (max-width: 767px) {
+			.on-hover-40:hover {
+				margin-left: 0px;	
+			}
+			.on-hover--40:hover {
+				margin-left: 0px;
+			}	
+		}

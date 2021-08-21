@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(24, 22, 22);
+    
+}
+html{
+font-size: calc(1em+1vw);
+}
+.animates{
+-webkit-animation:animates 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+
+animation:animates 1s cubic-bezier(0.2, 0.6, 0.2, 1);
+-webkit-animation-fill-mode:backwards;
+-moz-animation-fill-mode:backwards;
+animation-fill-mode:backwards;
+}
+
+
+@-webkit-keyframes animates {
+0% {opacity: 0;-webkit-transform: translateY(100%);}
+100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animates {
+0% {opacity: 0;transform: translateY(30vh);} /* WORK ON THISSS! */
+/* 	0% {transform: translateY(100%);} */
+100% {opacity: 1;transform: translateY(0%);}	
+}
+.delay04 { -webkit-animation-delay: .4s; animation-delay: .4s;}
+
+.delay08 { -webkit-animation-delay: .8s; animation-delay: .8s;}
+
+
+.logo{
+position: fixed;
+float: right;
+right: 10%;
+top: 8%;
+z-index: 999;
+font-size: 1.5rem;
+color: white;
+font-family: 'Baloo Bhai 2', cursive;
+
+}
+.logo:after{
+content: 'sameeksha';
+color: white;
+cursor: pointer;
+}
+.logo:hover:after{
+content: 'sameeksha.home';
+color: red;
+
+}
+.top-bottom-margin{
+margin-top: 20vh;
+}
+.color{
+color: white;
+}
+.container{
+margin-left: 10vw;
+margin-top: 5vh;
+}
+@media screen and (max-width:800px){
+    .container{
+        margin-bottom: 10vh;
+        margin-left: 25vw;
+       
+    }
+}
+.box1{
+width: 38vw;
+padding: 0.2em;
+border: 0.1em solid black;
+margin: 0;
+border-radius: 4em;
+background: black;
+margin-top: 1.5em;
+margin-bottom: 0.5em; 
+position: relative; 
+
+
+}
+.box1:before {
+content: '';
+position: absolute;
+width: 75%;
+padding: 0.2em;
+
+
+
+border-radius: 4em;
+
+margin-top: -0.2em;
+
+background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+animation: animate 2s linear forwards ;
+}
+@keyframes animate {
+    0%{
+    left: 0%; width: 0%;
+    }
+    50%{
+    left: 0%; width: 25%;
+    }
+    100%{
+    left: 0%; width: 90%;
+    }
+}
+.box2{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em; 
+    position: relative; 
+    
+    
+    }
+    .box2:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate2 2s linear forwards ;
+    }
+
+@keyframes animate2 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 80%;
+}
+
+}
+.box3{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em; 
+    position: relative; 
+    
+    
+    }
+    .box3:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate3 2s linear forwards ;
+    }
+
+@keyframes animate3 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 60%;
+}
+
+}
+.box4{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em; 
+    position: relative; 
+    
+    
+    }
+    .box4:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate4 2s linear forwards ;
+    }
+
+@keyframes animate4 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 50%;
+}
+
+}
+.box9{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em; 
+    position: relative; 
+    
+    
+    }
+    .box9:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate9 2s linear forwards ;
+    }
+
+@keyframes animate9 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 75%;
+}
+
+}
+.box7{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em; 
+    position: relative; 
+    
+    
+    }
+    .box7:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate7 2s linear forwards ;
+    }
+
+@keyframes animate7 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 70%;
+}
+
+}
+.box8{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em; 
+    position: relative; 
+    
+    
+    }
+    .box8:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate8 2s linear forwards ;
+    }
+
+@keyframes animate8 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 70%;
+}
+
+}
+h1{
+color: white;
+margin-left: 20vw;
+
+
+}
+.fullcontainer{
+display: flex;
+}
+@media screen and (max-width:800px){
+    .fullcontainer{
+        flex-direction: column;
+       
+    }
+}
+
+
+.box5{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 2em;
+    margin-bottom: 1.8em; 
+    position: relative; 
+    
+    
+    }
+    .box5:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate5 2s linear forwards ;
+    }
+
+@keyframes animate5 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 90%;
+}
+}
+
+.box6{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em; 
+    position: relative; 
+    
+    
+    }
+    .box6:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate6 2s linear forwards ;
+    }
+
+@keyframes animate6 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 75%;
+}
+}
+.box10{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em; 
+    position: relative; 
+    
+    
+    }
+    .box10:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate10 2s linear forwards ;
+    }
+
+@keyframes animate10 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 90%;
+}
+}
+.box11{
+    width: 38vw;
+    padding: 0.2em;
+    border: 0.1em solid black;
+    margin: 0;
+    border-radius: 4em;
+    background: black;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em; 
+    position: relative; 
+    
+    
+    }
+    .box11:before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    padding: 0.2em;
+    
+    
+    
+    border-radius: 4em;
+    
+    margin-top: -0.2em;
+    
+    background: linear-gradient(90deg, green 0%, green 5%,green 100% );
+    animation: animate11 2s linear forwards ;
+    }
+
+@keyframes animate11 {
+0%{
+left: 0%; width: 0%;
+}
+50%{
+left: 0%; width: 25%;
+}
+100%{
+left: 0%; width: 70%;
+}
+}
+
+
+
+
+
